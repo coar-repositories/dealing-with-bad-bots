@@ -1,6 +1,10 @@
 # Dealing With Bad Bots
+This repository contains a collection of resources, coordinated by the *[Dealing With Bad Bots COAR Task Group](./Task%20Group/)*, to aid repository managers in dealing with an emergent problem.
 
-This repository contains a collection of resources, coordinated by the [Dealing With Bad Bots COAR Task Group](./Task%20Group/), to aid repository managers in dealing with an emergent problem.
+```markdown
+> [!NOTE]
+> Useful information that users should know, even when skimming content.
+```
 
 ## Context
 
