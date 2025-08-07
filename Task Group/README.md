@@ -12,6 +12,8 @@
 
 The task group was formed in July 2025 and is expected to deliver its short-term outputs in the second half of 2025. The group may continue beyond this period, depending on the outcome of Goal 5 (above). Some ideas which have already been suggested include providing a forum for discussion and evaluation of possible interventions at the network-level - e.g. community maintained infrastructure to aid repositories in mitigating the effects of bad bots.
 
+![](./timeline.png)
+
 ## Membership
 
 - Gernot Deinzer
