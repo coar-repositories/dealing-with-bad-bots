@@ -1,4 +1,6 @@
 # Dealing With Bad Bots
+(This repository has a short-link alias for convenience - [https://bit.ly/dealing-with-bad-bots](https://bit.ly/dealing-with-bad-bots)).
+
 This repository contains a collection of resources, coordinated by the *[Dealing With Bad Bots COAR Task Group](./Task%20Group/)*, to aid repository managers in dealing with an emergent problem.
 
 ## Context
