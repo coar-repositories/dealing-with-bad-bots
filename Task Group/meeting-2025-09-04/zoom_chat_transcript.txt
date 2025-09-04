@@ -1,0 +1,162 @@
+14:00:28 From Martin Klein to Everyone:
+	Morning!
+	
+14:02:45 From Paul Walk to Everyone:
+	https://github.com/coar-repositories/dealing-with-bad-bots
+	
+14:02:57 From Paul Walk to Everyone:
+	https://github.com/coar-repositories/dealing-with-bad-bots/blob/main/Task%20Group/meeting-2025-09-04/README.md
+	
+14:09:58 From Petr Knoth (CORE.ac.uk / The Open University) to Everyone:
+	I think that advising repository managers against “wrong” practices (e.g. where we know that they would or are already being used is important)
+	
+14:12:19 From Martin Klein to Everyone:
+	https://www.ietf.org/archive/id/draft-illyes-aipref-cbcp-00.txt
+	
+14:13:23 From Charl Roberts - Wits University to Everyone:
+	Can we have something on how repository managers communicate this issue to their stakeholders - this is where I notice pressure is coming from, and not all the repository managers have a relative short and direct description of the issue.
+	
+14:16:07 From herbert to Everyone:
+	I am all in favor of having discussions with GitHub issues
+	Brian McBride:👍
+	
+14:18:31 From Petr Knoth (CORE.ac.uk / The Open University) to Everyone:
+	“Strategies we are advocating/warning against”
+	
+14:18:46 From herbert to Everyone:
+	Agreed. But need to explain why
+	Petr Knoth (CORE.ac.uk / The Open University), Harpinder Singh, Brian McBride, Gernot Deinzer:👍
+	
+14:18:56 From Charl Roberts - Wits University to Everyone:
+	Not Recommended...
+	herbert, Gernot Deinzer:👍
+	
+14:19:10 From ariel lira (sedici) to Everyone:
+	like blocking by country
+	Michael Eadie:👍
+	
+14:19:51 From Rafael Bértoli to Everyone:
+	Something that I think needs to be made clear is that none of these strategies is in itself sufficient to solve the "problem"
+	herbert:👍
+	
+14:20:03 From Harpinder Singh to Everyone:
+	Replying to "like blocking by country":
+	Or blocking everyone but your country (what we end up doing lot these days)
+	
+14:20:25 From Petr Knoth (CORE.ac.uk / The Open University) to Everyone:
+	Replying to "like blocking by country":
+	and putting tariffs on 🤣🤣
+	Harpinder Singh, Michael Eadie, Brian McBride:😂
+	
+14:23:01 From Martin Klein to Everyone:
+	Agile peer review ;-)
+	
+14:25:34 From ariel lira (sedici) to Everyone:
+	a problem caused by bots that may be mentioned is the damage they make in usage stats. Usage stats are not trustable
+	herbert, Charl Roberts - Wits University:👍
+	
+14:27:15 From Paul Walk to Everyone:
+	https://docs.google.com/spreadsheets/d/1zF7vQoEFEpA3n_aJxKrp5yJxBHHsJYpDNd_2K0x72TY/edit
+	
+14:40:43 From Brian McBride to Everyone:
+	Maybe we could work on drafting suggested robots.txt , WAF, etc configurations and use the GitHub repo for sharing recommendations
+	Paul Walk:👍
+	
+14:43:04 From Paul Walk to Everyone:
+	Replying to "Maybe we could work on drafting suggested robots.t...":
+	Yes - agreed
+	
+14:44:48 From Bruno Marmol to Everyone:
+	Do we need to begin by the repository manager real problem for entry in sheet ?
+	      Do you have acces to forbident page
+	           Here are the mitigation...
+	
+	      Do you have too much access on authorized page
+	           Here are the mitigation...
+	
+14:45:06 From Bruno Marmol to Everyone:
+	...
+	
+14:46:21 From Bruno Marmol to Everyone:
+	very difficult to identifiy some bad bots!!! Scruting logs attentivly ...
+	Brian McBride:💯
+	
+14:46:38 From Harpinder Singh to Everyone:
+	I feel like we need an "Impact" column (Low, Medium, High) to rate how effectively each measure mitigates the aggressive bot-harvesting issue at hand
+	Bruno Marmol, Charl Roberts - Wits University, Brian McBride:👍
+	
+14:49:25 From Brian McBride to Everyone:
+	Replying to "very difficult to identifiy some bad bots!!! Scrut...":
+	We’ve noticed that some bots are using user agent strings that are not accurate
+	
+14:49:31 From Patrick Hochstenbach to Everyone:
+	Replying to "very difficult to identifiy some bad bots!!! Scrut...":
+	I also don’t think it Is easy to identity a bot at all. We don’t know when a bot does not respect robots.txt.
+	Bad bots identifies like humans..and we can’t block humans
+	
+14:49:32 From Bruno Marmol to Everyone:
+	User agent permit to identify bot not so bad ;-)
+	
+14:50:23 From Bruno Marmol to Everyone:
+	But genraly, a bot read robots.txt , not a normal user.
+	
+14:50:32 From ariel lira (sedici) to Everyone:
+	IETF doc says bots must be easily identifiable (among others cahracteristics). But lots of bots give fake user agents. There are some identifiable bad-bots , but most of them are not.
+	Brian McBride, Charl Roberts - Wits University:👍
+	
+14:51:42 From Martin Klein to Everyone:
+	Recommended best practice from the IETF draft document:
+	1.  Crawlers must support and respect the Robots Exclusion Protocol.
+	2.  Crawlers must be easily identifiable through their user agent string.
+	3.  Crawlers must not interfere with the regular operation of a site.
+	4.  Crawlers must support caching directives.
+	5.  Crawlers must expose the IP ranges they are crawling from in a standardized format.
+	6.  Crawlers must expose a page that explains how the crawled data is used and how it can be blocked.
+	
+14:53:02 From Patrick Hochstenbach to Everyone:
+	This looks like a definition of a good bot. Still not what a bad bot is
+	
+14:54:15 From Petr Knoth (CORE.ac.uk / The Open University) to Everyone:
+	Btw. The google bot does not obey those points 🙂 Not sure if repositories will block it.
+	Bruno Marmol, Rafael Bértoli:👍
+	
+14:56:08 From Charl Roberts - Wits University to Everyone:
+	There has to be service impact for blocking to take place
+	
+14:56:20 From herbert to Everyone:
+	I think there’s there’s 2 things here: (1) the “tools” a repo has to determine what is a bad bot (cf IETF doc). That includes e.g. robots.txt (2) the things the repo can do once it was determined that a bad bot is at play according to (1), e.g. block, send to a honeypot, …
+	
+14:56:38 From Harpinder Singh to Everyone:
+	Blocking by IP is not affective anymore, we noticed harvesters changing IP every single request, see how many unique IPs we are seeing that make only single request to our site
+	
+14:56:39 From Harpinder Singh to Everyone:
+	Screenshot2025_09_04_095635.jpg
+	
+14:57:14 From herbert to Everyone:
+	Replying to "Blocking by IP is not affective anymore, we notice...":
+	Yes, that’s not low hanging fruit
+	
+14:57:56 From Petr Knoth (CORE.ac.uk / The Open University) to Everyone:
+	I can imagine a number of recommended actions which would be related to blocking (once identified). E.g. 
+	
+	Block by IP / behaviour etc. 
+	Describe and report the behaviour somewhere (in a shared resource) so that other repositories can be warned.
+	If you cannot block it (e.g. it is using TOR), describe the behaviour / share logs?
+	
+14:58:43 From ariel lira (sedici) to Everyone:
+	Replying to "Recommended best practice from the IETF draft docu...":
+	it should be a 7. crawlers should respect throtling instructions (i.e via retry-after http header)
+	Martin Klein:👍
+	
+14:59:00 From Brian McBride to Everyone:
+	Does anyone see value in a community driven effort to track IP from bad bots? We could potentially use this data for nginx rules
+	Rafael Bértoli, Charl Roberts - Wits University, Martin Klein:👍
+	
+14:59:39 From herbert to Everyone:
+	Replying to "Does anyone see value in a community driven effort...":
+	I think that would be great
+	
+14:59:46 From Petr Knoth (CORE.ac.uk / The Open University) to Everyone:
+	Replying to "Does anyone see value in a community driven effort...":
+	Yes, I am actually already talking to my team about this
+	
